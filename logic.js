@@ -86,5 +86,6 @@ function drawWave(ctx,amplitude,trig){
 }
 $(document).ready(function() {
  	//start();
+	window.requestAnimationFrame(draw);
 	draw();
 });
