@@ -5,7 +5,6 @@ layout: default
 
  <div class="row">
     <form class="col s12">
-      <div class="row">
         <div class="col s4" >
           <h1>Input Binary String:</h1>
         </div>
@@ -16,7 +15,5 @@ layout: default
            <button class="indigo btn waves-effect" style="padding:0 16px;" type="submit" onClick="cpEnter()"> QAM IT!
            </button>
          </div>
-        
-      </div>
   </form>
 </div>
