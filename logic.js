@@ -25,6 +25,20 @@ function start(timestamp) {
   			});
         window.requestAnimationFrame(start);
 		}
+function draw() {
+            var canvas = document.getElementById("canvas");
+            var context = canvas.getContext("2d");
+
+            context.clearRect(0, 0, 500, 500);
+            showAxes(context);
+            context.save();            
+            
+            plotSine(context, step, 50);
+            context.restore();
+            
+            step += 4;
+            window.requestAnimationFrame(draw);
+        }
 
 		function drawWave(ctx,amplitude,trig){
   			var width = ctx.canvas.width;
