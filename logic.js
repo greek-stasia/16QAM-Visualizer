@@ -25,6 +25,7 @@ function start(timestamp) {
   			});
         window.requestAnimationFrame(start);
 		}
+
 function draw() {
             var canvas = document.getElementById("canvas");
             var context = canvas.getContext("2d");
@@ -40,27 +41,28 @@ function draw() {
             window.requestAnimationFrame(draw);
         }
 
-		function drawWave(ctx,amplitude,trig){
-  			var width = ctx.canvas.width;
-  			var height = ctx.canvas.height;
-  			ctx.beginPath();
-  			ctx.lineWidth = 2;
-  			ctx.strokeStyle = "blue";
+function drawWave(ctx,amplitude,trig){
+	var width = ctx.canvas.width;
+	var height = ctx.canvas.height;
+	ctx.beginPath();
+	ctx.lineWidth = 2;
+	ctx.strokeStyle = "blue";
 
-  			var x = 0;
-  			var y = 0;
-  			var frequency = height / (2 * Math.PI);
-  			ctx.save();
-  			ctx.translate(-amplitude * Math[trig](step / frequency), 0);
-  			while (y < height) {
-   			 	x = width / 2 + amplitude * Math[trig]((y + step) / frequency);
-    			ctx.lineTo(x, y);
-   				 y++;
- 			 }
-  			// ctx.closePath();
-  			ctx.stroke();
-  			ctx.restore();
-		}
+	var x = 0;
+	var y = 0;
+	var frequency = height / (2 * Math.PI);
+	ctx.save();
+	ctx.translate(-amplitude * Math[trig](step / frequency), 0);
+	while (y < height) {
+		x = width / 2 + amplitude * Math[trig]((y + step) / frequency);
+	ctx.lineTo(x, y);
+		 y++;
+	 }
+	// ctx.closePath();
+	ctx.stroke();
+	ctx.restore();
+}
 $(document).ready(function() {
-  start();
+ 	//start();
+	draw();
 });
