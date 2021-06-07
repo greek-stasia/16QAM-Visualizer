@@ -1,29 +1,28 @@
 <html>
-<head>
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-</head>
-<head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<script src="./logic.js"></script>
+  <head>
+    <script src="./logic.js"></script>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+<body>
+   <div class="row">
+      <form class="col s6">
+          <div class="col s4" >
+            <h1>Input Binary String:</h1>
+          </div>
+           <div class="input-field col s6">
+             <input placeholder="0101001" id="cp" type="text" class="validate" >
+          </div>
+           <div class="col s2">
+             <button class="indigo btn waves-effect" style="padding:0 16px;" type="submit" onClick="cpEnter()"> QAM IT!
+             </button>
+           </div>
+    </form>
 
- <div class="row">
-    <form class="col s6">
-        <div class="col s4" >
-          <h1>Input Binary String:</h1>
-        </div>
-         <div class="input-field col s6">
-           <input placeholder="0101001" id="cp" type="text" class="validate" >
-        </div>
-         <div class="col s2">
-           <button class="indigo btn waves-effect" style="padding:0 16px;" type="submit" onClick="cpEnter()"> QAM IT!
-           </button>
-         </div>
-  </form>
- 
-  <div class="col s6">
-   <h1> Modulated wave</h1>
+    <div class="col s6">
+     <h1> Modulated wave:</h1>
+    </div>
   </div>
-</div>
+  </body>
 </html>
