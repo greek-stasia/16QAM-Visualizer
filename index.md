@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <html>
   <head>
     <script src="./logic.js"></script>
