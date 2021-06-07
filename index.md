@@ -4,7 +4,7 @@ layout: default
 <script src="./logic.js"></script>
 
  <div class="row">
-    <form class="col s12">
+    <form class="col s6">
         <div class="col s4" >
           <h1>Input Binary String:</h1>
         </div>
@@ -16,4 +16,7 @@ layout: default
            </button>
          </div>
   </form>
+ <div class="col s6">
+  <h1> Modulated wave</h1>
+ </div>
 </div>
