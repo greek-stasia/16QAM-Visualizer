@@ -1,14 +1,7 @@
 ---
 layout: default
 ---
-<html>
-  <head>
-    <script src="./logic.js"></script>
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
-<body>
+
    <div class="row">
       <form class="col s6">
           <div class="col s4" >
@@ -28,5 +21,4 @@ layout: default
       <canvas id="canvas" width="500" height="100"></canvas>
     </div>
   </div>
-  </body>
-</html>
+
