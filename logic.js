@@ -26,11 +26,33 @@ function start(timestamp) {
         window.requestAnimationFrame(start);
 		}
 
+function showAxes(ctx,axes) {
+            var width = ctx.canvas.width;
+            var height = ctx.canvas.height;
+            var xMin = 0;
+            
+            ctx.beginPath();
+            ctx.strokeStyle = "rgb(128,128,128)";
+            
+            // X-Axis
+            ctx.moveTo(xMin, height/2);
+            ctx.lineTo(width, height/2);
+            
+            // Y-Axis
+            ctx.moveTo(width/2, 0);
+            ctx.lineTo(width/2, height);
+
+            // Starting line
+            ctx.moveTo(0, 0);
+            ctx.lineTo(0, height);
+            
+            ctx.stroke();
+        }
+
 function draw() {
             var canvas = document.getElementById("canvas");
             var context = canvas.getContext("2d");
-
-            context.clearRect(0, 0, 500, 500);
+	    context.clearRect(0, 0, 500, 500);
             showAxes(context);
             context.save();            
             
