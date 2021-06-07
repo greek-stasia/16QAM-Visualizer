@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: compress
 ---
 
    <div class="row">
