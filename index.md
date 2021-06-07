@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-
+<script src="./logic.js"> </script>
    <div class="row">
       <form class="col s6">
           <div class="col s4" >
