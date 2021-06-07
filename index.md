@@ -11,12 +11,12 @@ layout: default
         </div>
          <div class="input-field col s6">
            <input placeholder="0101001" id="cp" type="text" class="validate" >
-         </div>
+        
          <div class="col s2">
            <button class="indigo btn waves-effect" style="padding:0 16px;" type="submit" onClick="cpEnter()">Submit
-              <i class="material-icons right">send</i>
+              <i class="material-icons right">QAM it!</i>
            </button>
-         </div>
+        
       </div>
   </form>
 </div>
