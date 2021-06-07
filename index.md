@@ -16,6 +16,7 @@ layout: default
            <button class="indigo btn waves-effect" style="padding:0 16px;" type="submit" onClick="cpEnter()">Submit
               <i class="material-icons right">QAM it!</i>
            </button>
+          </div>
         
       </div>
   </form>
